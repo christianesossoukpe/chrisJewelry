@@ -57,7 +57,7 @@ pnpm dev
 1. Obtenez votre numéro WhatsApp Business ou personnel
 2. Modifiez le fichier `.env.local`:
    \`\`\`
-   NEXT_PUBLIC_WHATSAPP_NUMBER=33612345678
+   NEXT_PUBLIC_WHATSAPP_NUMBER=96212310
    \`\`\`
 3. Remplacez `33612345678` par votre numéro (format international sans +)
 
