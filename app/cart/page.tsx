@@ -8,7 +8,7 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Trash2, Plus, Minus } from "lucide-react"
 
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "33612345678"
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "96212310"
 
 export default function CartPage() {
   const { cartItems, removeFromCart, updateQuantity, getTotalPrice, clearCart } = useCart()
