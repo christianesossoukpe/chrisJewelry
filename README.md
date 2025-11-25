@@ -148,6 +148,6 @@ Pour toute question ou problème, consultez la documentation:
 
 MIT
 
----
+ 
 
 Créé avec ❤️ pour les bijouteries modernes
