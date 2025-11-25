@@ -15,9 +15,9 @@ export default function CartPage() {
   const total = getTotalPrice()
 
   const handleWhatsAppCheckout = () => {
-    const itemsList = cartItems.map((item) => `${item.name} x${item.quantity} - ${item.price}Fcfa`).join("\n")
+    const itemsList = cartItems.map((item) => `${item.name} x${item.quantity} - ${item.price} Fcfa`).join("\n")
     const totalPrice = total
-    const message = `Bonjour, je souhaite commander:\n\n${itemsList}\n\nTotal: ${totalPrice}Fcfa\n\nPouvez-vous confirmer ma commande?`
+    const message = `Bonjour, je souhaite commander:\n\n${itemsList}\n\nTotal: ${totalPrice} Fcfa\n\nPouvez-vous confirmer ma commande?`
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
   }
@@ -54,7 +54,7 @@ export default function CartPage() {
                       </div>
                       <div className="flex-grow">
                         <h3 className="font-semibold text-lg mb-2">{item.name}</h3>
-                        <p className="text-primary font-bold mb-3">{item.price}Fcfa</p>
+                        <p className="text-primary font-bold mb-3">{item.price} Fcfa</p>
                         <div className="flex items-center gap-2">
                           <button
                             onClick={() => updateQuantity(item.id, Math.max(1, item.quantity - 1))}
@@ -72,7 +72,7 @@ export default function CartPage() {
                         </div>
                       </div>
                       <div className="text-right">
-                        <p className="font-semibold mb-4">{(item.price * item.quantity).toFixed(2)}Fcfa</p>
+                        <p className="font-semibold mb-4">{(item.price * item.quantity).toFixed(2)} Fcfa</p>
                         <button
                           onClick={() => removeFromCart(item.id)}
                           className="text-destructive hover:bg-destructive/10 p-2 rounded transition"
@@ -92,7 +92,7 @@ export default function CartPage() {
                   <div className="space-y-4 mb-6 pb-6 border-b border-border">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Sous-total</span>
-                      <span className="font-semibold">{total.toFixed(2)}Fcfa</span>
+                      <span className="font-semibold">{total.toFixed(2)} Fcfa</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Livraison</span>
@@ -101,7 +101,7 @@ export default function CartPage() {
                   </div>
                   <div className="flex justify-between text-xl font-bold mb-6">
                     <span>Total</span>
-                    <span className="text-primary">{total.toFixed(2)}Fcfa</span>
+                    <span className="text-primary">{total.toFixed(2)} Fcfa</span>
                   </div>
                   <Button
                     onClick={handleWhatsAppCheckout}

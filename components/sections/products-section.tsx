@@ -51,7 +51,7 @@ export function ProductsSection() {
                 <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
                 <p className="text-muted-foreground mb-4 text-sm">{product.description}</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-2xl font-bold text-primary">{product.price}Fcfa</span>
+                  <span className="text-2xl font-bold text-primary">{product.price} Fcfa</span>
                   <Button
                     onClick={() => addToCart(product)}
                     className="bg-primary hover:bg-primary/90 text-primary-foreground"

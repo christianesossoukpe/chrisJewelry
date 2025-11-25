@@ -73,7 +73,7 @@ export function ProductsList({ onEdit }: ProductsListProps) {
                     </div>
                   </td>
                   <td className="py-2 px-4">{product.category === "men" ? "Hommes" : "Femmes"}</td>
-                  <td className="py-2 px-4 font-semibold">{product.price}Fcfa</td>
+                  <td className="py-2 px-4 font-semibold">{product.price} Fcfa</td>
                   <td className="py-2 px-4">
                     <div className="flex gap-2">
                       <Button size="sm" variant="outline" onClick={() => onEdit(product)} className="gap-1">
