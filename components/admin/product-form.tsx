@@ -107,7 +107,7 @@ export function ProductForm({ product, onSubmit, onCancel }: ProductFormProps) {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="price">Prix (€)</Label>
+              <Label htmlFor="price">Prix (Fcfa)</Label>
               <Input
                 id="price"
                 type="number"
